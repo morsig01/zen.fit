@@ -1,6 +1,6 @@
 'use client'
 
-import router from 'next/router';
+import router from 'next/navigation';
 import React, { useState } from 'react'
 
 const Register = () => {
@@ -26,7 +26,6 @@ const Register = () => {
         const data = await response.json();
         if (response.ok) {
           alert('Registration successful!');
-          router.push('/login'); 
         } else {
           alert(`Error: ${data.message}`);
         }
@@ -35,7 +34,7 @@ const Register = () => {
     <div className='flex items-center justify-center min-h-screen'>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded shadow-md w-1/4"
+        className="bg-white p-6 rounded shadow-md w-1/4 text-black"
       >
         <h1 className="text-2xl font-bold mb-4">Register</h1>
         <div className="mb-4">
