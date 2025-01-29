@@ -1,15 +1,17 @@
 import Navbar from '@/components/Navbar'
-import Main from '@/components/Main'
+import Hero from '@/components/Hero'
 import React from 'react'
 import Footer from '@/components/Footer'
+import Cards from '@/components/Cards-section'
 
 const Home = () => {
   return (
+
     <>
-    <Navbar />
-    <Main />
-    <Footer />
+    <Hero />
+    <Cards />
     </>
+
   )
 }
 
