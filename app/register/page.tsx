@@ -1,5 +1,6 @@
 'use client'
 
+import router from 'next/router';
 import React, { useState } from 'react'
 
 const Register = () => {
@@ -25,6 +26,7 @@ const Register = () => {
         const data = await response.json();
         if (response.ok) {
           alert('Registration successful!');
+          router.push('/login'); 
         } else {
           alert(`Error: ${data.message}`);
         }

@@ -4,11 +4,12 @@ import mysql from 'mysql2/promise';
 
 // MySQL connection pool
 const pool = mysql.createPool({
-  host: 'localhost', 
-  user: 'root',      
-  password: '',      
-  database: 'gym_database', 
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
+
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {

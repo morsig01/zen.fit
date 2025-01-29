@@ -1,5 +1,6 @@
 'use client'
 
+import router from 'next/router';
 import { useState } from 'react';
 
 const Login = () => {
@@ -24,7 +25,7 @@ const Login = () => {
     const data = await response.json();
     if (response.ok) {
       alert('Login successful!');
-      // Redirect to dashboard or homepage here
+      router.push('/membership');
     } else {
       alert(`Error: ${data.message}`);
     }
