@@ -5,7 +5,7 @@ const About = () => {
     <div className="flex flex-col">
       <div className="flex w-full h-screen">
         <div className="bg-neutral-900 w-1/5 flex flex-col items-center justify-center border-black border-2">
-          <p className="text-7xl font-bold rotate-90 text-white">About us</p>
+          <p className="text-7xl font-bold rotate-90 text-pink-500">About us</p>
         </div>
 
         <div className="flex-1 bg-[url('/ingvild.png')] bg-cover bg-center" />
