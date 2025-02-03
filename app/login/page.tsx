@@ -31,13 +31,15 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-neutral-950">
+    <div className="flex items-center justify-center w-full h-screen relative">
+    <div className="absolute inset-0 bg-cover bg-center bg-[url('/gym.jpg')] blur-sm" />
+    <div className="absolute inset-0 bg-black bg-opacity-50" />
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-md w-96 text-black"
+        className="bg-neutral-900 p-8 rounded-lg shadow-2xl w-full max-w-sm text-white z-10"
       >
-        <h1 className="text-2xl font-bold mb-4">Login</h1>
-        <div className="mb-4">
+        <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
+        <div className="mb-6">
           <label htmlFor="email" className="block text-sm font-medium">
             Email
           </label>
@@ -51,7 +53,7 @@ const Login = () => {
             required
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-6">
           <label htmlFor="password" className="block text-sm font-medium">
             Password
           </label>
