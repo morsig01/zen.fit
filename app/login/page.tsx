@@ -1,6 +1,6 @@
 'use client'
 
-import router from 'next/router';
+import router from 'next/navigation';
 import { useState } from 'react';
 
 const Login = () => {
@@ -25,17 +25,16 @@ const Login = () => {
     const data = await response.json();
     if (response.ok) {
       alert('Login successful!');
-      router.push('/membership');
     } else {
       alert(`Error: ${data.message}`);
     }
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-neutral-950">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-md w-96"
+        className="bg-white p-6 rounded-lg shadow-md w-96 text-black"
       >
         <h1 className="text-2xl font-bold mb-4">Login</h1>
         <div className="mb-4">

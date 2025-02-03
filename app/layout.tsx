@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Climate_Crisis, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
+const climateCrisis = Climate_Crisis({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${climateCrisis.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
         {children}
