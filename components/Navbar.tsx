@@ -31,6 +31,12 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
 
+          <div className="">
+            <Link href="/profile">
+              <Image src="/profile.svg" alt="profile" width={35} height={35} />
+            </Link>
+          </div>
+
           {/* Hamburger Menu (Mobile) */}
           <div className="md:hidden">
             <button

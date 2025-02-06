@@ -8,7 +8,7 @@ const Main = () => {
       <div className="relative w-full h-screen bg-cover bg-center bg-[url('/gym.jpg')]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]" />
         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-24">
-          <span className="text-white text-5xl lg:text-9xl font-bold">
+          <span className="text-white text-5xl lg:text-8xl font-thin font-climate">
             Welcome to ZenFit!
           </span>
           <div>

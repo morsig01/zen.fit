@@ -4,14 +4,14 @@ const About = () => {
   return (
     <div className="flex flex-col">
       <div className="flex w-full h-screen">
-        <div className="bg-neutral-900 w-1/5 flex flex-col items-center justify-center border-black border-2">
+        <div className="bg-[#0a0a0a] w-1/5 flex flex-col items-center justify-center">
           <p className="text-7xl font-bold rotate-90 text-pink-500">About us</p>
         </div>
 
         <div className="flex-1 bg-[url('/ingvild.png')] bg-cover bg-center" />
       </div>
 
-      <div className="p-40 bg-neutral-900 text-white">
+      <div className="p-40 bg-[#0a0a0a] text-white">
         <h1 className="text-2xl font-bold mb-4">Our vision</h1>
         <p className="text-gray-400 mb-4">
           Our center was founded with a clear vision: to make exercise
